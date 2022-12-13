@@ -8,8 +8,7 @@
  */
 int _isalpha(int c)
 {
-int letter = c;
-if ((letter < 123 && letter > 96) || (letter < 90 && letter 65))
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 return (1);
 else
 return (0);
