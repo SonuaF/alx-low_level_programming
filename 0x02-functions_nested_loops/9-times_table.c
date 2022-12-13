@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *
  * times_table - ptints the 9 times table starting with 0
