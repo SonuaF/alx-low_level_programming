@@ -6,16 +6,17 @@
  */
 int main(void)
 {
-int digit_1 = 0, digit_2 = 0;
-for (digit_1 = 0; digit_1 <= 9; digit_1++)
+int ones = '0';
+int tens = '0';
+for (tens = '0'; tens <= '9'; tens++)
 {
-for (digit_2 = 0; digit_2 <= 9; digit_2++)
+for (ones = '0'; ones <= '9'; ones++)
 {
-if (digit_1 != digit_2 && digit_1 < digit_2)
+if (!((ones == tens) || (tens > ones)))
 {
-putchar(digit_1 + '0');
-putchar(digit_1 + '0');
-if (digit_1 < 8 && digit_2 <= 9)
+putchar(tens);
+putchar(ones);
+if (!(ones == '9' && tens == '8'))
 {
 putchar(',');
 putchar(' ');
