@@ -20,7 +20,7 @@ printf("Buzz");
 }
 if (i % 3 != 0 && i % 5 != 0)
 {
-pritnf("%d", i);
+printf("%d", i);
 }
 if (i != 100)
 printf(" ");
