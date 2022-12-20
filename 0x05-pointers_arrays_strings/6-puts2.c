@@ -2,7 +2,8 @@
 #include "main.h"
 /**
  * puts2 - prints a string
- * @str - the string printed
+ *
+ * @str: string to put twice
  */
 void puts2(char *str)
 {
