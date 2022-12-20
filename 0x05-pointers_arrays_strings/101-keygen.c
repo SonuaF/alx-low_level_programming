@@ -8,17 +8,15 @@
  */
 int main(void)
 {
-char s = 0;
-int i = 0;
-char j = 0;
-srand(time(0));
-while (i <= 2645)
+int pass, sum;
+srand(time(NULL));
+sum = 0;
+while (sum <= 2645)
 {
-s = rand() % 128;
-i += s;
-putchar(s);
+pass = (rand() % 128);
+sum += pass;
+printf("%c", pass);
 }
-j = 2772 - i;
-putchar(j);
+printf("%c", 2772 - sum);
 return (0);
 }
