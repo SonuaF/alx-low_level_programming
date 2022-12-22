@@ -1,20 +1,24 @@
 #include "main.h"
 /**
- * *rot13 - function that returns a string
- * @c: string
- * Return: returned string
+ * rot13 - function that encodes a string
+ * @s: input string
+ * Return: point to dest
  */
-char *rot13(char *c)
+char *rot13(char *s)
 {
-int i, j;
-char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char r[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-for (i = 0; c[i] != '\0'; i++)
-for (j = 0; j < 52; j++)
-if (c[i] == a[j])
+int count = 0, i;
+char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+while (*(s + count) != '\0')
 {
-c[i] = r[j];
+for (i = 0; i < 52; i++)
+{
+if (*(s + count) == alphabet[i])
+{
+*(s + count) = rot13[i];
 break;
 }
-return (c);
+}
+}
+return (s);
 }
