@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * _strcat - concatenates two strings
@@ -8,20 +9,35 @@
  */
 char *_strcat(char *dest, char *src)
 {
-int i;
-int j;
+
+int i, j, k;
+
 i = 0;
+
 while (dest[i] != '\0')
-{
+
 i++;
-}
-j = 0;
-while (src[j] != '\0')
+
+k = 0;
+
+j = i;
+
+while (src[k] != '\0')
+
 {
-dest[i] = src[j];
-i++;
+
+
+
+*(dest + j) = *(src + k);
+
 j++;
+
+k++;
+
 }
-dest[i] = '\0';
+
+*(dest + j) = '\0';
+
 return (dest);
+
 }

@@ -1,12 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-
-#include <stdlib.h>
-
-#include <ctype.h>
-
-#include <string.h>
-
+#define NULL 0
 
 /**
  * _strchr - entry point
@@ -16,5 +9,17 @@
  **/
 char *_strchr(char *s, char c)
 {
-return (s);
+int i = 0;
+
+while (s[i] != '\0' && s[i] != c)
+
+i++;
+
+if (s[i] == c)
+
+return (&s[i]);
+
+else
+
+return (NULL);
 }

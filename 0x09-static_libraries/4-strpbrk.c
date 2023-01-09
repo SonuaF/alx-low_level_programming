@@ -1,6 +1,7 @@
 #include "main.h"
+#define NULL 0
 /**
- * _strpbrk - Entry point
+ * _strpbrk - returns pointer to byte in s
  * @s: input value
  * @accept: input value
  *
@@ -8,15 +9,31 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-int k;
-while (*s)
+int x = 0, y;
+
+while (s[x] != '\0')
+
 {
-for (k = 0; accept[k]; k++)
+
+for (y = 0; accept[y] != '\0'; y++)
+
 {
-if (*s == accept[k])
+
+if (s[x] == accept[y])
+
+{
+
+s = &s[x];
+
 return (s);
+
 }
-s++;
+
 }
-return ('\0');
+
+x++;
+
+}
+
+return (NULL);
 }
