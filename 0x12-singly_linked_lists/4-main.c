@@ -22,11 +22,11 @@ int main(void)
 
 	        head = NULL;
 
-		    add_node_end(&head, "Jennie");
+		    add_node_end(&head, "Bob");
 
 		        add_node_end(&head, "&");
 
-			    add_node_end(&head, "Jay");
+			    add_node_end(&head, "Kris");
 
 			        add_node_end(&head, "love");
 
