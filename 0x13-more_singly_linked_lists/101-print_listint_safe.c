@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * print_listint_safe - function that prints a linked list with a loop safely.
@@ -65,4 +66,4 @@ size_t print_listint_safe(const listint_t *head)
 
 								return (counter);
 
-
+}
