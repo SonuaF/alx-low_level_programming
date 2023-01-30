@@ -1,7 +1,5 @@
-#include <stdio.h>
-
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * print_listint - print nodes and return nbr of nodes
  * @h: first node of the list
